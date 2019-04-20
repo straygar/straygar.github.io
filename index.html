@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Aigars Reiters | Software Developer</title>
+		<meta name="description" content="A software developer, musician and exotic tea nut - all in one fun package. A lot of my free time is spent learning new skills to help the people I care about."/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="static/images/icon-sm-blue.png">
+		<!--[if lte IE 8]><script src="static/assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="static/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="static/assets/js/main.js"></script>
+		
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">				
+				<!-- Main -->
+				<section id="main">
+					
+					
+					<div class="tabbed-menu">
+						<ul class="tabs">
+							<li class="selected" data-tab="about">
+								<img src="static/images/icon-sm-blue.png" alt="icon" style="height: 1em; padding-right:5px; ">
+								About Me
+							</li>
+							<!--<li data-tab="contact">Get in Touch</li>-->
+						</ul>
+					</div>
+					
+					<div class="content selected" id="about">
+						<header>
+							<span class="avatar"><img src="static/images/avatar.jpg" alt="Portrait" /></span>
+							<h1>Aigars Reiters</h1>
+							<p>Software Developer</p>
+						</header>
+
+						<footer>						
+							<ul class="icons">
+								<li><a href="mailto:aigars@reiters.tech" class="fa-envelope">aigars@reiters.tech</a></li>
+								<li><a href="https://www.linkedin.com/in/aigars-reiters/" class="fa-linkedin">LinkedIn</a></li>
+								<li><a href="static/AigarsReiters_CV.pdf" class=" fa-file-text">View CV</a></li>
+							</ul>
+						</footer>
+					</div>
+					
+					<div class="content" id="contact">
+						<h2>Get in touch</h2>
+						<h3>just fill in the form below</h3>
+						<form method="post" action="#">
+							<div class="field">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+							</div>
+
+							<ul class="actions">
+								<li><a href="#" class="button">Send</a></li>
+							</ul>
+						</form>
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; Aigars Reiters</li><li>Design: Identity by Html5 Up</li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="static/assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>
