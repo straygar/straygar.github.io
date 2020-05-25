@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech Blog</title>
+    <title>Aigars Rambles Tech</title>
     <link>https://aigarsreiters.tech/blog/</link>
-    <description>Recent content on Tech Blog</description>
+    <description>Recent content on Aigars Rambles Tech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 May 2020 20:56:15 +0100</lastBuildDate>
