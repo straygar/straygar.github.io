@@ -256,7 +256,7 @@
 	
 	.tabbed-menu li {
 		display: inline-block;
-		width: 100%;
+		width: 45%;
 	}
 	
 	.tabbed-menu li:not(.selected):hover {
