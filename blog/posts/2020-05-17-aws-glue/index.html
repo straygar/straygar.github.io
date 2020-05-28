@@ -136,7 +136,7 @@
 
             
             <figure class="post-full-image">
-                <img src="https://aigarsreiters.tech/blog/images/data-loch.jpg" alt="AWS Glue - Zero to Data-Plumbing Hero! (part 1)" />
+                <img src="https://aigarsreiters.tech/blog/images/aws-glue/data-loch.jpg" alt="AWS Glue - Zero to Data-Plumbing Hero! (part 1)" />
             </figure>
             
 
@@ -172,11 +172,11 @@
 <li><strong>Transform</strong> - <em>Change</em> its shape/contents,</li>
 <li><strong>Load</strong> - <em>Write</em> the output to some destination.</li>
 </ul>
-<p><img src="https://aigarsreiters.tech/blog/images/etl-nutshell.png" alt="ETL - In a Nutshell"></p>
+<p><img src="https://aigarsreiters.tech/blog/images/aws-glue/etl-nutshell.png" alt="ETL - In a Nutshell"></p>
 <p>In other words, it is a complete &ldquo;job&rdquo; of a data pipeline. Either a Python script running on your laptop that reads some text file and prints the output, or a massive <a href="https://aws.amazon.com/emr/">EMR</a> cluster running daily <a href="https://spark.apache.org/">Spark</a> jobs, processing petabytes of data - ETL comes in all shapes and sizes!</p>
 <h2 id="intro-to-glue">Intro to Glue</h2>
 <p>AWS Glue is a family of services that make up an all-inclusive, managed and serverless ETL solution. It acts as the <em>&ldquo;glue&rdquo;</em> holding together your data that is scattered across the different AWS data stores - <a href="https://aws.amazon.com/s3/">S3</a>, <a href="https://aws.amazon.com/dynamodb/">DynamoDB</a>, <a href="https://aws.amazon.com/rds/aurora/">Aurora</a>, <a href="https://aws.amazon.com/redshift/">RedShift</a>, <a href="https://www.postgresql.org/">PostgreSQL</a> - you name it!</p>
-<p><img src="https://aigarsreiters.tech/blog/images/glue-architecture.jpg" alt="Glue Environment Architecture">
+<p><img src="https://aigarsreiters.tech/blog/images/aws-glue/glue-architecture.jpg" alt="Glue Environment Architecture">
 <em>Glue Environment Architecture, source: <a href="https://docs.aws.amazon.com/glue/latest/dg/components-key-concepts.html">AWS</a></em></p>
 <p>At the core sits the <strong>Glue Data Catalog</strong>, which stores metadata for your different data sets as <em>tables</em><strong>*</strong> in a <em>database</em><strong>*</strong>, allowing them to be easily queried in <a href="https://aws.amazon.com/athena/">Athena</a>, processed in an ETL job etc. It abstracts away details such as the location of the data, what service it is stored on etc., allowing you to, for example, join a RedShift table with a DynamoDB table and the output as another table stored on S3, without knowing what in the world a &ldquo;range key&rdquo; or &ldquo;global secondary index&rdquo; even is.</p>
 <p><em><strong>*</strong> <strong>Note:</strong> These are not tables or databases in the traditional sense. Tables are just a generic metastore (you can define a table as any random blob of metadata, really), while a database is just a namespace to group tables together.</em></p>
